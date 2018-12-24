@@ -140,7 +140,14 @@ public class Array<E> {
             remove(index);
         }
     }
-
+    //得到最后一个元素
+    public E getLast(){
+        return get(size - 1);
+    }
+    //得到第一个元素
+    public E getFirst(){
+        return get(0);
+    }
     //动态扩容
     private void resize(int newCapacity) {
         //创建一个新的数组，这个数组是之前数组的2倍大小
